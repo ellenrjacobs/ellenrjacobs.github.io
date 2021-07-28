@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Ellen R. Jacobs</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Ellen R. Jacobs</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="index.html#about">About</a>
+</li>
+<li>
+  <a href="index.html#proj">Current Projects</a>
+</li>
+<li>
+  <a href="index.html#pubs">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/ellenrjacobs">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/ellenrjacobs">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Ellen R. Jacobs</h1>
+
+</div>
+
+
+<div id="phd-student-in-behavioral-ecology" class="section level3">
+<h3>PhD Student in Behavioral Ecology</h3>
+<div style="float:left;position: relative; right: 30px; top: -7px;">
+<p><img src="headshot.JPG" width="325px" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+</div>
+<div id="about" class="section level1">
+<h1>About</h1>
+<p>Hello! My name is Ellen and I am a 3rd year PhD student in the Department of Biology at Georgetown University. My pronouns are she/her. <a href="https://orcid.org/0000-0003-2957-3286" class="uri">https://orcid.org/0000-0003-2957-3286</a></p>
+<div id="whatIdo" class="section level3">
+<h3>What I do</h3>
+<p>I study the behavioral ecology of bottlenose dolphins. I’m interested in the interactions between individual behavior, social dynamics, and foraging ecology. My work uses a long-term dataset of behavioral observations of Indo-Pacific bottlenose dolphins in Shark Bay, Western Australia. Across the ocean, I’m also working on a large-scale passive acoustic monitoring project of the common bottlenose dolphins that use the Potomac River in Chesapeake Bay watershed on the East Coast of the United States.</p>
+</div>
+<div id="whereIwork" class="section level3">
+<h3>Where I work</h3>
+<p>I am currently at Georgetown University in Washington, DC, USA, affiliated with both the Shark Bay Dolphin Research Project and the Potomac-Chesapeake Dolphin Research Project. Previously, I received my Masters of Science from Aarhus University in Aarhus Denmark, where I completed a thesis investigating the active space of sperm whale social calls in the Eastern Caribbean. Before graduate school, after completing my Bachelors of Science in Ecology, Behavior, and Evolution at the University of California, San Diego, I worked at the Monterey Bay Aquarium Research Institute, the Woods Hole Institute of Oceanography, and the Smithsonian Tropical Research Institute.</p>
+</div>
+</div>
+<div id="proj" class="section level1 tabset">
+<h1>Current Projects</h1>
+<div id="maternal-style" class="section level2">
+<h2>Maternal Style</h2>
+<p>I’m interested in the differences in style between individual mother dolphins in the resident population of bottlenose dolphins in Shark Bay, Western Australia.</p>
+<p>Variation in individual maternal style has been established in many primate species but rarely in cetaceans. As a social species with a long period of calf dependence, bottlenose dolphins are an excellent system in which to investigate whether mothers show variation in maternal style. In this project, we leverage 30+ years of study of Indo-Pacific bottlenose dolphins (Tursiops aduncus) in Shark Bay, Australia to uncover whether individual differences in maternal style are consistent over multiple calves. Using population survey data (n=19587) and focal follow data (n=343) to extract behavioral observations, we examine characteristics (network position, activity budget, maternal care) of 16 mothers of 47 calves &lt;2 years old. Using GLMMs, we show that maternal identity has a significant impact on all measures across multiple calves. Our approach indicates that maternal style is an individually consistent multidimensional trait and suggests diverse styles can achieve similar fitness outcomes, providing insight into processes shaping calf development.</p>
+<p>Upcoming presentations:<br />
+Animal Behavior Society Conference, August 2021: Invited Talk<br />
+Society for Marine Mammalogy Conference, December 2021: Speed Talk<br />
+</p>
+<div class="figure">
+<img src="mom%20and%20baby.JPG" alt="" />
+<p class="caption">Mother dolphin and baby. Photo courtesy of Ewa Krzyszczyk &amp; the Shark Bay Dolphin Research Project.</p>
+</div>
+</div>
+<div id="pam-in-the-potomac" class="section level2">
+<h2>PAM in the Potomac</h2>
+<p>I’m interested in understanding the way that bottlenose dolphins are using the Potomac River and how they may be affecting commercial fisheries in the area with their foraging behavior.</p>
+<p>Since 2015, the Potomac-Chesapeake Dolphin Project has documented &gt;1200 bottlenose dolphins in the Potomac River. However, the movement patterns of these animals within the Potomac River are poorly known. With a 100-year data gap in reported bottlenose dolphin sightings in the river, it is unclear whether their presence is a new phenomenon, an increase due to cleaner waters, or they have been here all along. In order to understand how bottlenose dolphins are currently using the river, we have deployed seven C-POD hydrophones spanning the lower tidal Potomac, from Dahlgren, Virginia to where the Potomac empties into the Chesapeake Bay. We will track dolphin movement within the river using the presence/absence of dolphin clicks recorded at each hydrophone site. From this, we can determine diel- and seasonal-scale movement patterns as well as patterns in foraging behavior. Bottlenose dolphins are key indicators of ecosystem health and water quality, so understanding their presence and role within the ecosystem will present an opportunity to cultivate a responsible relationship with these inhabitants of our aquatic ecosystems.</p>
+<div class="figure">
+<img src="dolphin%20crab%20pot.JPG" alt="" />
+<p class="caption">A dolphin swims past a commercial crab pot. Photo taken under NMFS permit #23782.</p>
+</div>
+</div>
+</div>
+<div id="pubs" class="section level1">
+<h1>Publications</h1>
+<div id="refs">
+<div id="ref-jacobs_first_2019">
+<p>Jacobs, E., Duffy, M., Magolan, J., Vernazzani, B. G., Cabrera, E., Landea, R., Buchan, S., &amp; Sayigh, L. (2019). First acoustic recordings of critically endangered eastern South Pacific southern right whales (Eubalaena australis). <em>Marine Mammal Science</em>, <em>35</em>(1), 284–289. <a href="https://doi.org/10.1111/mms.12519">https://doi.org/10.1111/mms.12519</a></p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
